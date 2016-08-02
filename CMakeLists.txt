@@ -12,9 +12,11 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   geometry_msgs
 )
-find_package(OpenCV REQUIRED)
-find_package(Eigen REQUIRED)
+find_package(OpenCV 2 REQUIRED)
 find_package(apriltags_cpp REQUIRED)
+find_package(Eigen3)
+
+add_definitions(-DEIGEN_NO_DEBUG -DEIGEN_MPL2_ONLY)
 
 # Import the yaml-cpp libraries.
 include(FindPkgConfig)
@@ -47,7 +49,7 @@ add_definitions(-frounding-math)
 include_directories(
     include/
     ${catkin_INCLUDE_DIRS}
-    ${Eigen_INCLUDE_DIRS}
+    ${EIGEN3_INCLUDE_DIRS}
     ${OpenCV_INCLUDE_DIRS}
     ${Yaml_INCLUDE_DIRS}
     ${apriltags_cpp_INCLUDE_DIRS}
@@ -55,7 +57,7 @@ include_directories(
 
 add_executable(apriltags src/apriltags.cpp)
 target_link_libraries(apriltags ${catkin_LIBRARIES})
-target_link_libraries(apriltags ${Eigen_LIBRARIES})
+target_link_libraries(apriltags ${Eigen3_LIBRARIES})
 target_link_libraries(apriltags ${OpenCV_LIBRARIES})
 target_link_libraries(apriltags ${Yaml_LIBRARIES})
 target_link_libraries(apriltags ${apriltags_cpp_LIBRARIES})
