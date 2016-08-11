@@ -2,6 +2,11 @@
 Changelog for package apriltags
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.0 (2016-08-11)
+------------------
+* Fixing library dependency changes from indigo->kinetic
+* Contributors: Tom Moore
+
 0.0.3 (2016-08-11)
 ------------------
 * Resetting package.xml version for catkin_prepare_release
