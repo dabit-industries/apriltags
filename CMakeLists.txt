@@ -41,6 +41,7 @@ catkin_package(
                  image_transport
                  roscpp
                  geometry_msgs
+                 message_runtime
 )
 
 # CGAL requires that -frounding-math be set.
