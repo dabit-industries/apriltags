@@ -2,8 +2,12 @@
 Changelog for package apriltags
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.1.0 (2016-08-11)
+0.1.0 (2016-08-24)
 ------------------
+* Version 0.1.0-2 (2016-08-24)
+* Adding missing message_runtime dependency in catkin_package declaration
+* Contributors: Tom Moore
+* Version 0.1.0-1 (2016-08-11)
 * Fixing library dependency changes from indigo->kinetic
 * Contributors: Tom Moore
 
