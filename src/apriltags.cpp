@@ -324,7 +324,6 @@ void ImageCallback(const sensor_msgs::ImageConstPtr& msg)
         Eigen::Quaternion<double> q(R);
         
         double tag_size = GetTagSize(detections[i].id);
-        cout << tag_size << " " << detections[i].id << endl;
         
         // Fill in MarkerArray msg
         visualization_msgs::Marker marker_transform;
