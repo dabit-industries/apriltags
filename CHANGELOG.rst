@@ -2,6 +2,12 @@
 Changelog for package apriltags
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.4 (2017-04-12)
+------------------
+* Removed cout on tag detection.
+* Fixing issue with missing message_runtime declaration
+* Contributors: Eric Tappan, Tom Moore
+
 0.0.3 (2014-11-30)
 ------------------
 * Updating CMakeLists and source includes to point to new apriltags_cpp package
