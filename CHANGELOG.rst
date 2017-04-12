@@ -2,6 +2,11 @@
 Changelog for package apriltags
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.1 (2017-04-12)
+------------------
+* Removed cout on tag detection.
+* Contributors: Eric Tappan
+
 0.1.0 (2016-08-24)
 ------------------
 * Version 0.1.0-2 (2016-08-24)
